@@ -21,11 +21,11 @@ void ofApp::setup(){
 	
     // Setup GUI
 	gui.setup(); // most of the time you don't need a name
-	gui.add(shutter.setup( "shutter", 0.3, 0, 0.2 ));
+	gui.add(shutter.setup( "shutter", 0.3, 0, 1.0 ));
 	gui.add(exposure.setup( "exposure", 0.8, 0, 1.0 ));
     gui.add(brightness.setup("brightness", 0.5, 0, 1.0));
     gui.add(gamma.setup("gamma", 0.5, 0, 1.0));
-    gui.add(gain.setup("gain", 0.5, 0, 0.5));
+    gui.add(gain.setup("gain", 0.5, 0, 1.0));
 	gui.add(autoSettings.setup("auto camera settings", false));
 	gui.add(autoExposure.setup("exposure", ""));
 	gui.add(autoShutter.setup("shutter", ""));
